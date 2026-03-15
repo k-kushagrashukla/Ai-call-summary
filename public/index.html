@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>AI Call Summary Generator</title>
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="app">
+
+<div class="container">
+
+<h1>AI Call Summary Generator</h1>
+
+<p class="subtitle">
+Paste a sales or support call transcript and instantly generate insights.
+</p>
+
+<div class="features">
+
+<span>📄 Summary</span>
+<span>⚠️ Objections</span>
+<span>🎯 Customer Intent</span>
+<span>😊 Sentiment</span>
+<span>➡️ Next Step</span>
+
+</div>
+
+<textarea id="transcript" placeholder="Paste your call transcript here..."></textarea>
+
+<div class="buttons">
+
+<button class="sample-btn" onclick="useSample()">Try Sample</button>
+
+<button class="analyze-btn" onclick="analyzeCall()">Analyze Call</button>
+
+</div>
+
+<div id="loading">Analyzing transcript...</div>
+
+<div id="result"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
